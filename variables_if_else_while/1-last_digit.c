@@ -18,7 +18,7 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	lastDigit = n % 10;
-	if (lastDigit >= 6)
+	if (lastDigit <= 6)
 	{
 		if (n == 0)
 		{
