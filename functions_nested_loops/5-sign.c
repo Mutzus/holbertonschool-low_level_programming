@@ -14,6 +14,6 @@ int print_sign(int n)
 	}
 	else
 	{
-	return (n >= 1)
+	return (n >= 1);
 	}
 }	
