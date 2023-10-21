@@ -1,21 +1,21 @@
 #include <stdio.h>
 
 /**
- * main - Prints numbers from 0 to 99
+ * main - prints combinations of single digit numbers
  *
- * Return: Always 0 (Success)
+ * Return: always 0
  */
 
 int main(void)
 {
-	int number = 0;
-	
-	while (number <= 99)
+	for (int i = 0; i <= 10; i++)
 	{
-		putchar(number + '0');
-		putchar(',');
-		putchar(' ');
-		number++;
+		putchar(i + '0');
+		if (i <= 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	putchar('\n');
 	return (0);
