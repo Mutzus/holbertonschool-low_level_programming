@@ -2,7 +2,7 @@
 
 /**
  * print_sign - prints if the sign of a number is + or -
- *
+ * @n: The character to be checked
  * Return: 0 (Number is 0), -1 (-) or 1 (+)
  */
 
