@@ -16,20 +16,24 @@ void times_table(void)
 		{
 			int x = i * n;
 
-			if (n != 0)
-			{
+			if (n == 0)
+                        {
+                                _putchar(x + '0');
+                        }
+                        else
+                        {
 				_putchar(',');
 				_putchar(' ');
+				if (x < 10)
+				{
+					_putchar(' ');
+				}
+				else
+				{
+					_putchar(x / 10 + '0');
+				}
+				_putchar(x % 10 + '0');
 			}
-			if (x != 0 || x < 10)
-			{
-				_putchar(' ');
-			}
-			else
-			{
-				_putchar(x / 10 + '0');
-			}
-			_putchar(x % 10 + '0');
 		}
 		_putchar('\n');
 	}
