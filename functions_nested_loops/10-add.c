@@ -8,6 +8,8 @@
 
 int add(int i, int n)
 {
+	int x;
+
 	if (i < 0)
 	{
 		i = -i;
@@ -16,7 +18,6 @@ int add(int i, int n)
 	{
 		n = -n;
 	}
-	int x = i + n;
-
+	x = i + n;
 	return (x);
 }
