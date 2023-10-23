@@ -22,7 +22,7 @@ void times_table(void)
 			}
 			if (x < 10)
 			{
-				_putchar('10');
+				_putchar(' ');
 			}
 			else
 			{
@@ -33,6 +33,7 @@ void times_table(void)
 			{
 				_putchar(',');
 			}
-			_putchar('\n')
 		}
+		_putchar('\n');
+	}
 }
