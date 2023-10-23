@@ -3,6 +3,7 @@
 /**
  * add - Prints the add of two integers
  * @i: character to be add
+ * @n: character to be add
  * Return: The Result of the add
  */
 
