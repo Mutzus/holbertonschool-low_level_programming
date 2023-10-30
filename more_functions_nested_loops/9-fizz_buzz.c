@@ -3,7 +3,7 @@
 /**
  * main - Prints the Fizz-Buzz test
  * 
- * Return: void
+ * Return: Always 0
  */
 
 int main(void)
@@ -34,4 +34,5 @@ int main(void)
 		}
 	}
 	printf("\n");
+	return (0);
 }
