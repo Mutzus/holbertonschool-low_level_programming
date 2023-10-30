@@ -3,7 +3,7 @@
 /**
  * print_diagonal - prints a diagonal
  * @n: Number of times the diagonal will be printed
- * Return: Always 0
+ * Return: void
  */
 
 void print_diagonal(int n)
@@ -11,9 +11,9 @@ void print_diagonal(int n)
 	int i = 1;
 	int j = 2;
 
-	while(i <= n);
+	while (i <= n);
 	{
-		while(j <= 2)
+		while (j <= 2)
 		{
 			_putchar(' ');
 			i++;
@@ -22,5 +22,4 @@ void print_diagonal(int n)
 		_putchar('\n');
 	}
 	_putchar('\n');
-	return(0);
 }

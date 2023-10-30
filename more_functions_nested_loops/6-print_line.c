@@ -3,7 +3,7 @@
 /**
  * print_line - Prints n times _
  * @n: number of times _ will be printed
- * Return: Always 0
+ * Return: void
  */
 
 void print_line(int n)
@@ -16,5 +16,4 @@ void print_line(int n)
 		i++;
 	}
 	_putchar('\n');
-	return(0);
 }
