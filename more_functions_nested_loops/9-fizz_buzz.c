@@ -2,7 +2,7 @@
 
 /**
  * main - Prints the Fizz-Buzz test
- * 
+ *
  * Return: Always 0
  */
 
