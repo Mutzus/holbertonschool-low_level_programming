@@ -25,5 +25,5 @@ char *_strncpy(char *dest, const char *src, int n)
 		dest++;
 		n--;
 	}
-	return result;
+	return (result);
 }

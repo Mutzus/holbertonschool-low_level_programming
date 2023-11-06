@@ -6,22 +6,25 @@
  * Return: str
  */
 
-char *leet(char *str)
+char *leet(char *s)
 {
-	char leet_map[256];
+	int count = 0, i;
+	int low_letters[] = {97, 101, 111, 116, 108};
+	int upp_letters[] = {65, 69, 79, 84, 76};
+	int numbers[] = {52, 51, 48, 55, 49};
 
-	for (int i = 0; i < 256; i++)
+	while (*(s + count) != '\0')
 	{
-		leet_map[i] = (char)i;
+		for (i = 0; i < 5; i++)
+		{
+			if (*(s + count) == low_letters[i] || *(s + count) == upp_letters[i])
+			{
+				*(s + count) = numbers[i];
+				break;
+			}
+		}
+		count++;
 	}
-	leet_map['a'] = leet_map['A'] = '4';
-	leet_map['e'] = leet_map['E'] = '3';
-	leet_map['o'] = leet_map['O'] = '0';
-	leet_map['t'] = leet_map['T'] = '7';
-	leet_map['l'] = leet_map['L'] = '1';
-	for (int i = 0; str[i] != '\0'; i++)
-	{
-		str[i] = leet_map[(int)str[i]];
-	}
-	return (str);
+
+	return (s);
 }
