@@ -1,21 +1,18 @@
 #include "main.h"
 
 /**
- * _isupper - Checks if c is a capital letter
- * @c: The character to be checked
- * Return: 1 for capital 0 otherwise
+ * _puts - prints a string
+ *
+ * Return: Vid
  */
 
-void print_rev(char *s)
+void _puts(char *str)
 {
-	if (*s != '\0') {
-        print_rev(s + 1);
-        putchar(*s);
-    printf("Original string: %s\n", str);
-    printf("String in reverse: ");
-    printStringReverse(str);
-    printf("\n");
+	int i;
 
-    return 0;
-}
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		_putchar (str[i]);
+	}
+	_putchar('\n');
 }
