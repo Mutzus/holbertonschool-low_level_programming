@@ -2,7 +2,8 @@
 
 /**
  * *_strcpy - copies the string pointed to by src
- *
+ * @dest: destination char
+ * @src: source char
  * Return: dest
  */
 
