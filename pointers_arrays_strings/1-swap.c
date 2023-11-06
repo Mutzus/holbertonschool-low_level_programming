@@ -3,7 +3,7 @@
 /**
  * swap_int - Swaps the value of 2 integers
  * @a: pointer
- * @b: pointer 
+ * @b: pointer
  * Return: void
  */
 
