@@ -15,18 +15,22 @@ unsigned int _strspn(char *s, char *accept)
 
 	temp = accept;
 
-	while (*accept != '\0')
+	while (*s != '\0')
 	{
 		if (*s == *accept)
-			{
+		{
 				count++;
 				accept = temp;
-				s++;
 			}
 			else
 			{
 				accept++;
 			}
+			if (*accept == '\0')
+			{
+				break;
+			}
+			s++;
 	}
 	return (count);
 }
