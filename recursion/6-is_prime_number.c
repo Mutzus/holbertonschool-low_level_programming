@@ -7,32 +7,16 @@
  * Return: 1 if the number is a prime number, 0 otherwise.
  */
 
-int is_prime_number(int n)
+int is_prime_number(int prime)
 {
-	if (n <= 1)
-	{
+	if (prime <= 1)
 		return (0);
-    }
-	return (is_prime_helper(n, 2));
-}
-
-/**
- * is_prime_helper - Helper function to recursively check if a number is prime.
- * @n: The number to check.
- * @divisor: The current divisor.
- *
- * Return: 1 if the number is a prime number, 0 otherwise.
- */
-
-int is_prime_helper(int n, int divisor)
-{
-	if (divisor > n / 2)
-	{
+	if (prime == 2)
 		return (1);
-	}
-	if (n % divisor == 0)
-	{
+	if ((prime % 2 == 0) || (prime % 3 == 0) || (prime % 5 == 0))
 		return (0);
-	}
-	return (is_prime_helper(n, divisor + 1));
+	else if (prime % 9 == 0 || prime % 7 == 0)
+		return (0);
+	else
+		return (1);
 }
