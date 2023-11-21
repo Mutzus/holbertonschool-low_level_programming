@@ -6,8 +6,10 @@
  * Return: 0 on success
  */
 
-int main(int argc)
+int main(int argc, char *argv[])
 {
+	(void) argv;
+
 	if (argc > 0)
 	{
 		printf("%d\n", argc - 1);
