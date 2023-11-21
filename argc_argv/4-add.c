@@ -20,18 +20,16 @@ int main(int argc, char *argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		int num = atoi(argv[i]);
+		char *endptr;
+		long num = strtol(argv[i], &endptr, 10);
 
-		if (num == 0 && argv[i][0] != '0')
+		if (*endptr != '\0' || num < 0)
 		{
 			printf("Error\n");
 			return (1);
 		}
-		if (num > 0)
-		{
-			sum += num;
-		}
+		sum+= num;
 	}
 	printf("%d\n", sum);
 	return (0);
-}
+}i
