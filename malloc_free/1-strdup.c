@@ -14,17 +14,17 @@ char *_strdup(char *str)
 	unsigned int length, i;
 
 	if (str == NULL)
-		return NULL;
+		return (NULL);
 
 	for (length = 0; str[length] != '\0'; length++)
 		continue;
 
 	duplicate = (char *)malloc((length + 1) * sizeof(char));
 	if (duplicate == NULL)
-	return NULL;
+	return (NULL);
 
 	for (i = 0; i <= length; i++)
 	duplicate[i] = str[i];
 
-	return duplicate;
+	return (duplicate);
 }
