@@ -8,27 +8,24 @@
  * Return: A pointer to the allocated memory.
  *         Returns NULL if nmemb or size is 0, or if malloc fails.
  */
-void *_calloc(unsigned int nmemb, unsigned int size) {
-    void *ptr;
-    unsigned int total_size, i;
 
-    /* Check if nmemb or size is 0 */
-    if (nmemb == 0 || size == 0)
-        return NULL;
+void *_calloc(unsigned int nmemb, unsigned int size)
+{
+	void *ptr;
+	unsigned int total_size, i;
 
-    /* Calculate the total size to allocate */
-    total_size = nmemb * size;
+	if (nmemb == 0 || size == 0)
+		return (NULL);
 
-    /* Allocate memory for the array */
-    ptr = malloc(total_size);
+	total_size = nmemb * size;
 
-    /* Check if malloc fails */
-    if (ptr == NULL)
-        return NULL;
+	ptr = malloc(total_size);
 
-    /* Initialize the memory to zero */
-    for (i = 0; i < total_size; i++)
-        *((char *)ptr + i) = 0;
+	if (ptr == NULL)
+		return (NULL);
 
-    return ptr;
+	for (i = 0; i < total_size; i++)
+		*((char *)ptr + i) = 0;
+
+	return (ptr);
 }
