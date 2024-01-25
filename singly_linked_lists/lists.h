@@ -1,7 +1,10 @@
 #ifndef LIST_H
 #define LIST_H
 
-/* Definition of list_t */
+/**
+ * struct list_s - provides a representation of a node in a linked list
+ */
+
 typedef struct list_s
 {
 	char *str;
