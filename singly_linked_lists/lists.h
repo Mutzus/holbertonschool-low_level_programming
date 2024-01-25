@@ -2,10 +2,11 @@
 #define LIST_H
 
 /* Definition of list_t */
-typedef struct list_s {
-    char *str;
-    unsigned int len;
-    struct list_s *next;
+typedef struct list_s
+{
+	char *str;
+	unsigned int len;
+	struct list_s *next;
 } list_t;
 
 /* Function prototypes */
