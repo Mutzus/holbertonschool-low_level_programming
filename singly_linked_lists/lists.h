@@ -3,6 +3,9 @@
 
 /**
  * struct list_s - provides a representation of a node in a linked list
+ * @str: Pointer to a string
+ * @len: Length of the string in the node
+ * @next: Pointer to the next node in the linked list
  */
 
 typedef struct list_s
