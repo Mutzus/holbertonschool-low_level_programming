@@ -1,6 +1,8 @@
 #ifndef LIST_H
 #define LIST_H
 
+#include <stddef.h>
+
 /**
  * struct list_s - provides a representation of a node in a linked list
  * @str: Pointer to a string
