@@ -1,15 +1,16 @@
 #include "main.h"
+#include <string.h>
 
 /**
- * create_file - Creates a file and writes content to it.
+ * create_file - Creates a file.
  * @filename: The name of the file to create.
- * @text_content: The content to write to the file.
+ * @text_content: A NULL terminated string to write to the file.
  *
  * Return: 1 on success, -1 on failure.
  */
 int create_file(const char *filename, char *text_content)
 {
-    int file_descriptor, write_result, close_result;
+    int file_descriptor, write_result;
 
     if (filename == NULL)
         return (-1);
@@ -28,9 +29,6 @@ int create_file(const char *filename, char *text_content)
         }
     }
 
-    close_result = close(file_descriptor);
-    if (close_result == -1)
-        return (-1);
-
+    close(file_descriptor);
     return (1);
 }
